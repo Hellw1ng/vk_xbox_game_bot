@@ -2,10 +2,10 @@ import telebot
 import requests
 from bs4 import BeautifulSoup
 import json
-import test1
-from test1 import *
-import parsing
-from parsing import main
+import parsjsonTur
+from parsjsonTur import *
+# import parsing
+# from parsing import main
 
 
 bot = telebot.TeleBot('5382388258:AAGEep0hi5f5p63KNA7vGStHosUDkMtXomc')
@@ -34,7 +34,7 @@ def get_user_text(message):
         print(msg)
         # user_id = message.user_id
         bot.send_message(message.chat.id, 'Начало обновления базы игр')
-        test1.main()
+        parsjsonTur.main()
         # time.sleep(20)
         msg = message.text.lower()
         # user_id = message.user_id
